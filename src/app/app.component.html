@@ -5,7 +5,10 @@
   <div class="pip-cheatsheet-app-body">
     <div class="pip-cheatsheet-app-body-left">mokuji</div>
     <div class="pip-cheatsheet-app-body-right">
-      <pip-cheatsheet-viewer></pip-cheatsheet-viewer>
+      <div #pipViewer class="pip-cheatsheet-app-body-right-viewer">
+        <pip-cheatsheet-viewer></pip-cheatsheet-viewer>
+      </div>
+      <p-button label="PIP View" (click)="onPipViewClick()" />
     </div>
   </div>
 </div>
