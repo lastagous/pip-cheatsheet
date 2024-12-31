@@ -1,0 +1,22 @@
+[
+  {
+    "title": "フェーズ 1",
+    "image": "/assets/test/1.png",
+    "time": 0
+  },
+  {
+    "title": "フェーズ 2",
+    "image": "/assets/test/2.png",
+    "time": 5000
+  },
+  {
+    "title": "フェーズ 3",
+    "image": "/assets/test/3.png",
+    "time": 10000
+  },
+  {
+    "title": "フェーズ 1",
+    "image": "/assets/test/4.png",
+    "time": 15000
+  }
+]

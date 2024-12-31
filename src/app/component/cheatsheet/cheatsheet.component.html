@@ -1,20 +1,47 @@
 <div class="pip-cheatsheet-viewer">
   <div class="pip-cheatsheet-viewer-header">
-    <div class="pip-cheatsheet-viewer-header-title"></div>
-    <div class="pip-cheatsheet-viewer-header-timer"></div>
+    <div class="pip-cheatsheet-viewer-header-title">
+      <span>{{ recordViewModel.title }}</span>
+    </div>
+    <div class="pip-cheatsheet-viewer-header-timer">
+      <span>{{ timerString }}</span>
+    </div>
   </div>
   <div class="pip-cheatsheet-viewer-body">
     <div class="pip-cheatsheet-viewer-body-content">
-      <div class="pip-cheatsheet-viewer-body-content-image"></div>
+      <div class="pip-cheatsheet-viewer-body-content-image">
+        <img [src]="recordViewModel.image" />
+      </div>
     </div>
   </div>
   <div class="pip-cheatsheet-viewer-footer">
     <div class="pip-cheatsheet-viewer-footer-control">
-      <div class="pip-cheatsheet-viewer-footer-control-restart"></div>
-      <div class="pip-cheatsheet-viewer-footer-control-back"></div>
-      <div class="pip-cheatsheet-viewer-footer-control-play"></div>
-      <div class="pip-cheatsheet-viewer-footer-control-stop"></div>
-      <div class="pip-cheatsheet-viewer-footer-control-next"></div>
+      <div class="pip-cheatsheet-viewer-footer-control-restart">
+        <p-button icon="pi pi-replay" [text]="true" (click)="onReplayClick()" />
+      </div>
+      <div class="pip-cheatsheet-viewer-footer-control-back">
+        <p-button
+          icon="pi pi-step-backward"
+          [text]="true"
+          (click)="onBackClick()"
+        />
+      </div>
+      @if (isTimerStarted) {
+      <div class="pip-cheatsheet-viewer-footer-control-stop">
+        <p-button icon="pi pi-pause" [text]="true" (click)="onStopClick()" />
+      </div>
+      } @else {
+      <div class="pip-cheatsheet-viewer-footer-control-play">
+        <p-button icon="pi pi-play" [text]="true" (click)="onStartClick()" />
+      </div>
+      }
+      <div class="pip-cheatsheet-viewer-footer-control-next">
+        <p-button
+          icon="pi pi-step-forward"
+          [text]="true"
+          (click)="onNextClick()"
+        />
+      </div>
     </div>
   </div>
 </div>

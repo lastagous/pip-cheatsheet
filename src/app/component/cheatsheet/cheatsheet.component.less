@@ -1,4 +1,28 @@
 .pip-cheatsheet-viewer {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .pip-cheatsheet-viewer-header {
+    width: 100%;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .pip-cheatsheet-viewer-body {
+    flex-grow: 1;
+  }
+
+  .pip-cheatsheet-viewer-footer {
+    width: 100%;
+
+    .pip-cheatsheet-viewer-footer-control {
+      display: flex;
+      justify-content: center;
+    }
+  }
 }
