@@ -9,9 +9,11 @@
   </div>
   <div class="pip-cheatsheet-viewer-body">
     <div class="pip-cheatsheet-viewer-body-content">
+      @for (image of recordViewModel.images; track image) {
       <div class="pip-cheatsheet-viewer-body-content-image">
-        <img [src]="recordViewModel.image" />
+        <img [src]="image" />
       </div>
+      }
     </div>
   </div>
   <div class="pip-cheatsheet-viewer-footer">

@@ -1,5 +1,5 @@
 export interface RecordViewModel {
   title: string;
-  image: string;
+  images: string[];
   time: number;
 }

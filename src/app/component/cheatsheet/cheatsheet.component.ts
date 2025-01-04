@@ -43,7 +43,7 @@ export class CheatsheetComponent implements OnInit, OnDestroy {
   private createDefaultRecordViewModel(): RecordViewModel {
     return {
       title: '',
-      image: '',
+      images: [],
       time: 0,
     };
   }
