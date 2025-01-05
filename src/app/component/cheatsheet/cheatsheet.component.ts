@@ -1,7 +1,7 @@
 import { RecordViewModel } from '@/app/model/recordViewModel';
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import test_records from '@/assets/test/test_records.json';
 import { ButtonModule } from 'primeng/button';
+import fru_records from '@/assets/Dawntrail/FRU/fru_records.json';
 
 @Component({
   selector: 'pip-cheatsheet-viewer',
@@ -21,7 +21,7 @@ export class CheatsheetComponent implements OnInit, OnDestroy {
   private _milliseconds: number = 0;
 
   ngOnInit(): void {
-    this._recordViewModel = test_records[0] as RecordViewModel;
+    this._recordViewModel = fru_records[0] as RecordViewModel;
   }
 
   ngOnDestroy(): void {
@@ -53,7 +53,7 @@ export class CheatsheetComponent implements OnInit, OnDestroy {
   }
 
   private getThresholdRecordViewModel(threshold: number): RecordViewModel {
-    return test_records.reduce((max: RecordViewModel, obj: RecordViewModel) => {
+    return fru_records.reduce((max: RecordViewModel, obj: RecordViewModel) => {
       return obj.time <= threshold && obj.time >= max.time ? obj : max;
     }, this.createDefaultRecordViewModel());
   }
@@ -65,7 +65,7 @@ export class CheatsheetComponent implements OnInit, OnDestroy {
 
   public onBackClick(): void {
     const recordViewModel = this.getThresholdRecordViewModel(this._elapsedTime);
-    const recordViewModels = test_records.sort((a, b) => a.time - b.time);
+    const recordViewModels = fru_records.sort((a, b) => a.time - b.time);
     this.startFrom(
       recordViewModels[
         Math.max(recordViewModels.indexOf(recordViewModel) - 1, 0)
@@ -83,7 +83,7 @@ export class CheatsheetComponent implements OnInit, OnDestroy {
 
   public onNextClick(): void {
     const recordViewModel = this.getThresholdRecordViewModel(this._elapsedTime);
-    const recordViewModels = test_records.sort((a, b) => a.time - b.time);
+    const recordViewModels = fru_records.sort((a, b) => a.time - b.time);
     this.startFrom(
       recordViewModels[
         Math.min(

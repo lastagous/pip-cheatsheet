@@ -1,0 +1,78 @@
+[
+  {
+    "title": "フェーズ 1 (サイクロニックブレイク)",
+    "images": [
+      "/assets/Dawntrail/FRU/p1_cyclonic_break_fire.png",
+      "/assets/Dawntrail/FRU/p1_cyclonic_break_thunder.png"
+    ],
+    "time": 0
+  },
+  {
+    "title": "フェーズ 1 (楽園絶技)",
+    "images": ["/assets/Dawntrail/FRU/p1_utopian_sky.png"],
+    "time": 30000
+  },
+  {
+    "title": "フェーズ 1 (雷槍)",
+    "images": ["/assets/Dawntrail/FRU/p1_utopian_sky_thunder.png"],
+    "time": 45000
+  },
+  {
+    "title": "フェーズ 1 (シンソイルセヴァー)",
+    "images": ["/assets/Dawntrail/FRU/p1_fall_of_faith.png"],
+    "time": 90000
+  },
+  {
+    "title": "フェーズ 1 (塔)",
+    "images": ["/assets/Dawntrail/FRU/p1_tower.png"],
+    "time": 120000
+  },
+  {
+    "title": "フェーズ 2 (ダイアモンドダスト)",
+    "images": [
+      "/assets/Dawntrail/FRU/p2_diamond_dust_axe.png",
+      "/assets/Dawntrail/FRU/p2_diamond_dust_scythe.png"
+    ],
+    "time": 170000
+  },
+  {
+    "title": "フェーズ 2 (沼)",
+    "images": ["/assets/Dawntrail/FRU/p2_light_rampant_luminous_hammer.png"],
+    "time": 205000
+  },
+  {
+    "title": "フェーズ 2 (閑寂静寂)",
+    "images": ["/assets/Dawntrail/FRU/p2_biting_or_driving.png"],
+    "time": 215000
+  },
+  {
+    "title": "フェーズ 3 (時間圧縮・絶 立ち位置)",
+    "images": ["/assets/Dawntrail/FRU/p3_ultimate_relativity_position.png"],
+    "time": 410000
+  },
+  {
+    "title": "フェーズ 3 (時間圧縮・絶 手順)",
+    "images": ["/assets/Dawntrail/FRU/p3_ultimate_relativity_sequence.png"],
+    "time": 455000
+  },
+  {
+    "title": "フェーズ 3 (アポカリプス 立ち位置)",
+    "images": ["/assets/Dawntrail/FRU/p3_apocalypse_spread.png"],
+    "time": 530000
+  },
+  {
+    "title": "フェーズ 3 (アポカリプス 散開位置)",
+    "images": ["/assets/Dawntrail/FRU/p3_apocalypse_position.png"],
+    "time": 550000
+  },
+  {
+    "title": "フェーズ 4 (時間結晶 沼取得位置)",
+    "images": ["/assets/Dawntrail/FRU/p4_crystallize_time_attack_me.png"],
+    "time": 595000
+  },
+  {
+    "title": "フェーズ 4 (時間結晶 テイカー散開)",
+    "images": ["/assets/Dawntrail/FRU/p4_crystallize_time_spirit_taker.png"],
+    "time": 720000
+  }
+]
