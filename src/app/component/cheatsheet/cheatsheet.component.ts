@@ -33,7 +33,9 @@ export class CheatsheetComponent implements OnInit, OnDestroy {
   }
 
   get timerString(): string {
-    return `${this._minutes}:${this._seconds}.${this._milliseconds}`;
+    return `${this._minutes.toString().padStart(2, '0')}:${this._seconds
+      .toString()
+      .padStart(2, '0')}.${this._milliseconds.toString().padStart(3, '0')}`;
   }
 
   get isTimerStarted(): boolean {
