@@ -10,7 +10,10 @@
   <div class="pip-cheatsheet-viewer-body">
     <div class="pip-cheatsheet-viewer-body-content">
       @for (image of recordViewModel.images; track image) {
-      <div class="pip-cheatsheet-viewer-body-content-image">
+      <div
+        class="pip-cheatsheet-viewer-body-content-image"
+        (click)="onImageClick()"
+      >
         <img [src]="image" />
       </div>
       }

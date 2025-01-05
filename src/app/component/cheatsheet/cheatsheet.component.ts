@@ -58,6 +58,10 @@ export class CheatsheetComponent implements OnInit, OnDestroy {
     }, this.createDefaultRecordViewModel());
   }
 
+  public onImageClick(): void {
+    this.isTimerStarted ? this.stopTimer() : this.startTimer();
+  }
+
   public onReplayClick(): void {
     this.resetTimer();
     this.startTimer();
